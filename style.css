@@ -18,6 +18,15 @@ body {
   grid-area: 1 / 1 / span 2 / span 1;
 }
 
+.title-icon {
+  height: 100px;
+  fill: white;
+}
+
+.icon {
+  height: 20px;
+}
+
 .header {
   background-color: #ffffff;
   grid-area: 1 / 2 / span 1 / span 1;
