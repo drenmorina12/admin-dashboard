@@ -6,7 +6,7 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: 150px 1fr;
+  grid-template-rows: 170px 1fr;
   grid-template-columns: 270px 1fr;
   height: 100vh;
   width: 100vw;
@@ -57,14 +57,15 @@ body {
 
 .header {
   background-color: #ffffff;
-  grid-area: 1 / 2 / span 1 / span 1;
+  grid-area: 1 / 2 / 2 / 3;
   display: grid;
   grid-template: 2fr 3fr / 6fr 4fr;
+  border: 2px solid orange;
 }
 
 .search-section,
-.d2,
-.d3,
+.notification-section,
+.profile-section,
 .d4 {
   border: 1px solid black;
 }
@@ -111,6 +112,23 @@ body {
 .notification-section p {
   font-weight: bold;
   font-size: 18px;
+}
+
+.profile-section {
+  display: grid;
+  grid-template-columns: 2fr 7fr;
+  align-items: center;
+  justify-items: center;
+}
+
+.profile-section > img {
+  height: 60px;
+  margin-left: 60px;
+  border-radius: 30px;
+}
+
+.profile-section > div {
+  justify-self: left;
 }
 
 .main {
