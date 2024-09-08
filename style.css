@@ -58,6 +58,37 @@ body {
 .header {
   background-color: #ffffff;
   grid-area: 1 / 2 / span 1 / span 1;
+  display: grid;
+  grid-template: 2fr 3fr / 6fr 4fr;
+}
+
+.search-section,
+.d2,
+.d3,
+.d4 {
+  border: 1px solid black;
+}
+
+.search-section {
+  display: grid;
+  grid-template-columns: 70px 1fr;
+  align-items: center;
+  justify-content: center;
+  padding-left: 15px;
+}
+
+.search-section > img {
+  height: 30px;
+  justify-self: center;
+}
+
+.search-bar {
+  background-color: #e2e8f0;
+  height: 2rem;
+  border-radius: 20px;
+  padding-left: 10px;
+  margin-right: 30px;
+  border: none;
 }
 
 .main {
