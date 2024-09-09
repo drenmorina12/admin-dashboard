@@ -101,6 +101,12 @@ body {
   justify-self: center;
 }
 
+.notification-section > img:hover,
+.search-section > img:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
 .notification-section .pfp {
   height: 40px;
   border-radius: 25px;
@@ -267,4 +273,10 @@ button:hover {
 .trending > div > div > span:not(:first-child) {
   color: grey;
   font-size: 14px;
+}
+
+.announcements,
+.trending,
+.projects > div {
+  box-shadow: 2px 2px 5px 0px grey;
 }
