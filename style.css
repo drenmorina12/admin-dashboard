@@ -1,3 +1,7 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -233,10 +237,34 @@ button:hover {
 .announcements {
   margin-bottom: 25px;
   display: grid;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(auto-fit, minmax(50px, 1fr));
   gap: 13px;
 }
 
 .announcements > div:not(:last-child) {
   border-bottom: 2px solid #e5e5e5;
+}
+
+.trending {
+  display: grid;
+  grid-template-rows: repeat(auto-fit, minmax(50px, 1fr));
+}
+
+.trending > div {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 25px;
+}
+
+.trending img {
+  height: 40px;
+}
+
+.trending > div > div > span:not(:last-child) {
+  font-weight: bold;
+  font-size: 14px;
+}
+.trending > div > div > span:not(:first-child) {
+  color: grey;
+  font-size: 14px;
 }
